@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta Description (Important for SEO) -->
+    <meta name="description" content="Easily generate MIS reports in PDF format from user-provided data. Quick and reliable report generation with just a few clicks. Perfect for businesses and organizations.">
+
+    <!-- Meta Keywords (Optional but useful) -->
+    <meta name="keywords" content="MIS reports, PDF generation, report generation tool, user data reports, automated report creation, business reports, MIS PDF generator">
+
+    <!-- Meta Author -->
+    <meta name="author" content="Your Website Name">
+
+    <!-- Open Graph for Social Media (Optional) -->
+    <meta property="og:title" content="Generate MIS Reports in PDF | Fast and Easy">
+    <meta property="og:description" content="Generate professional MIS reports in PDF format directly from user data. Simple, quick, and automated for businesses.">
+    <meta property="og:image" content="URL-to-your-image">
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <!-- Twitter Card for Social Sharing (Optional) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Generate MIS Reports in PDF | Fast and Easy">
+    <meta name="twitter:description" content="Quickly create MIS reports in PDF format from user-provided data.">
+    <meta name="twitter:image" content="URL-to-your-image">
+
+    <title>MIS Report</title>
+    <link rel="icon" href="img/log.jpg" type="image/png">
+    <link rel="stylesheet" href="css/mispdf.css">
+</head>
+<body>
+    <h2>Information Management Report </h2><br>
+    <form action="mispdf.php" method="post" enctype="multipart/form-data">
+
+        <label for="department">Select your  the Department name </label>
+        <select  id="department" name="Department" required>
+            <option>Select Your Department </option>
+               <option value="Deparartment of Master's of computer Application (MCA)">Deparartment of Master's of computer Application (MCA)</option>
+               <option value="Deparartment of Bachelor's of Computer Application (BCA)">Deparartment of Bachelor's of Computer Application (BCA)</option>
+               <option value="Deparartment of Master's of Business Application (MBA)">Deparartment of Master's of Business Application (MBA)</option>
+               <option value="Deparartment of Bachelor's of Business Application (BBA)">Deparartment of Bachelor's of Business Application (BBA)</option>
+               <option value="Deparartment of Bachelor's of Science (B.sc)">Deparartment of Bachelor's of Science (B.sc)</option>
+               <option value="Deparartment of Bachelor's of Commerce (B.com)">Deparartment of Bachelor's of Commerce (B.com)</option>
+               <option value="Deparartment of Bachelor's of Arts (B.arts)">Deparartment of Bachelor's of Arts (B.arts)</option>
+               <option value="Deparartment of Bachelor's of Technolopgy (B.tech)">Deparartment of Bachelor's of Technolopgy (B.tech)</option>
+               <option value="Deparartment of Bachelor's voc(Softwewre developement)">Deparartment of Bachelor's voc(Softwewre developement)</option>
+               <option value="Deparartment of Bachelor's voc (Agriculture)">Deparartment of Bachelor's voc (Agriculture)</option>
+               <option value="Deparartment of Master's of Science - chemistryM.Sc">Deparartment of Master's of Science - chemistry</option>
+               <option value="Deparartment of Master's of Science - Physics">Deparartment of Master's of Science - Physics</option>
+               <option value="Deparartment of Master's of Science - Botney">Deparartment of Master's of Science - Botney</option>>
+               <option value="Deparartment of Master's of Science - Maths">Deparartment of Master's of Science - Maths</option>
+               <option value="Deparartment of Master's of Science - Comptuer Sci">Deparartment of Master's of Science - Comptuer Sci</option>
+               <option value="Deparartment of M.C.M ">Deparartment of M.C.M </option>
+               <option value="Deparartment of M.H.R.D">Deparartment of M.H.R.D </option>
+               <option value="Deparartment of Master's of Technology (Cosmatics)">Deparartment of Master's of Technology (Cosmatics) </option>
+               <option value="Deparartment of B.L.I.Sc ">Deparartment of B.L.I.Sc </option>
+           </select>
+
+        <label for="activity_name">Name of the Activity:</label>
+        <input type="text" id="activity_name" name="activity_name" required>
+
+        <label for="venue">Venue:</label>
+        <input type="text" id="venue" name="venue" required>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required>
+
+        <label for="resource_person">Resource Person:</label>
+        <input type="text" id="resource_person" name="resource_person" required>
+
+        <label for="resource_person_cv">CV of Resource Person:</label>
+        <input type="file" id="resource_person_cv" name="resource_person_cv[]" accept="image/*" multiple required>
+
+        <label for="activity_incharge">Activity Incharge:</label>
+        <input type="text" id="activity_incharge" name="activity_incharge" required>
+
+        <label for="list_committees">List of Committees and Notices and Minutes:</label>
+        <input type="file" id="list_committees" name="list_committees[]" accept="image/*" required multiple>
+
+        <label for="invitation_letter">Invitation Letter:</label>
+        <input type="file" id="invitation_letter" name="invitation_letter[]" accept="image/*" multiple required>
+
+        <label for="thanks_letter">Thanks Letter:</label>
+        <input type="file" id="thanks_letter" name="thanks_letter[]" accept="image/*" multiple required>
+
+        
+        <label for="photo">Upload Photos:</label>
+        <input type="file" id="photo" name="photo[]" multiple accept="image/*" required>
+
+        <label for="participants">Number of participants including teachers and students:</label>
+        <input type="number" id="participants" name="participants" required>
+
+        <label for="list_of_participants">List of Number of Participants Including Teachers and Students:</label>
+        <input type="file" id="list_of_participants" name="list_of_participants[]" accept="image/*" required multiple>
+
+        <label for="detailed_report">Detailed Report (Up to 1000 words):</label>
+        <textarea id="detailed_report" name="detailed_report" maxlength="2000" required></textarea>
+
+        <label for="pamphlet">Pamphlet:</label>
+        <input type="file" id="pamphlet" name="pamphlet[]" accept="image/*" multiple required>
+        
+        <label for="outcome">Outcome of Activity (Up to 500 words):</label>
+        <textarea id="outcome" name="outcome" maxlength="500" required></textarea>
+
+
+        <input type="submit" value="Generate Report">
+    </form>
+</body>
+</html>

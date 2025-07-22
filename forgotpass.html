@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/forgotpass.css">
+    <title>MIS Report</title>
+    <link rel="icon" href="img/log.png" type="log.jpg">
+</head>
+<body>
+    <div class="container">
+        <h2>Forgot Password</h2>
+        <form action="forgotpass.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your Username" name="username" required>
+
+            <label for="hint_answer">Hint Answer:</label>
+            <input type="text" id="hint_answer"placeholder="Enter your 'Hint' question's answer" name="hint_answer" required>
+
+            <label for="new_password">New Password:</label>
+            <input type="password" id="new_password" placeholder="Enter your New password" name="new_password" required>
+
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="password" id="confirm_password" placeholder=" Plese confirm the Passward" name="confirm_password" required>
+
+            <input type="submit" value="Reset Password">
+            <input  type="reset"  value="Clear">
+        </form>
+    </div>
+</body>
+</html>

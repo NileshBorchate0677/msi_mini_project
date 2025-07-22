@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/pexels-jess-bailey-designs-1007025.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size: 100%;
+    background-position: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+    color: black;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    background-color: #c76c6d; /* Blue color */
+    color: #020d18;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #1b5cbc; /* Darker blue color on hover */
+}
+h2{
+    color: black;
+}
+
+
+
+  
+  /* Style for the select dropdown */
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+   
+  }
+  
+  /* Style for the options within the select dropdown */
+  option {
+    padding: 10px;
+  }
+  

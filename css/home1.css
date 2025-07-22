@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: url('../img/pexels-jess-bailey-designs-1007025.jpg') no-repeat;
+    background-position: center;
+    background-size: 100%; 
+
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px;
+}
+
+.logo img {
+    height: 80px; /* Adjust height as needed */
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-links li {
+  margin-right: 20px;
+  margin: 10px 20px;
+}
+.nav-links  li a:hover{
+    color: indianred;
+    text-decoration: underline;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.option-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 105px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: indianred;
+}
+.option-btn img{
+    width: 30px;
+}
+
+.headertext{
+    padding: 40px;
+    border-radius: 40px;
+    backdrop-filter: blur(5px);
+
+    max-width: 680px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.headertext span{
+    letter-spacing: 5px;
+    font-size: 1.5em;
+}
+.headertext a{
+text-decoration: none;
+background-color: indianred;
+color: white;
+padding: 10px 20px;
+border-radius: 10px;
+letter-spacing: 5px;
+}
+.headertext a:hover{
+    color: black;
+}
+span{
+    text-decoration: underline;
+}
+.containerh{
+    width: 100%;
+    
+    background-size: cover;
+    background-position:center;
+    padding: 10px 8%;
+}
